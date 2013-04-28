@@ -1,0 +1,5 @@
+albumName: 'Soulfest 2009'
+albumDescription: 'A set of pictures taken from Soulfest 2009'
+albumDate: '07/31/2009 - 08/01/2009'
+albumLocation: 'Gilford, NH'
+albumCover: 'DSCN1681.jpg'

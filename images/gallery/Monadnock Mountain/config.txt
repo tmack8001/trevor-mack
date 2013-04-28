@@ -1,0 +1,5 @@
+albumName: 'Monadnock Mountain'
+albumDescription: 'Pictures from Dan Faucher's Event Hike.'
+albumDate: '08/08/2009'
+albumLocation: 'Jaffery, NH'
+albumCover: 'DSCN1893.jpg'

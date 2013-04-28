@@ -1,0 +1,5 @@
+albumName: 'RIT vs. AIC Game 1'
+albumDescription: 'Pictures from the first match up against the AIC Yellow Jackets in the 2008-2009 season.'
+albumDate: '01/16/2009'
+albumLocation: 'Rochester, NY'
+albumCover: 'DSCN0725.jpg'

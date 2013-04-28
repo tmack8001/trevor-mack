@@ -1,0 +1,5 @@
+albumName: 'BCM Halloween Party '08'
+albumDescription: 'BCM scheduled an in costume capture the flag game and after come to the Skalney room for food and fun.'
+albumDate: '10/25/2008'
+albumLocation: 'Rochester, NY'
+albumCover: 'DSCN0013.jpg'

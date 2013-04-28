@@ -1,0 +1,5 @@
+albumName: 'Sail Boston 2009'
+albumDescription: 'The tall ships visit Boston'
+albumDate: '07/11/2009'
+albumLocation: 'Boston Habor, MA'
+albumCover: 'DSCN1361.jpg'

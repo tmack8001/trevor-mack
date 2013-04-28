@@ -1,0 +1,5 @@
+albumName: 'RIT vs. Niagara Purple Eagles'
+albumDescription: 'Pictures from the Bus trip to Niagara.'
+albumDate: '11/08/2008'
+albumLocation: 'Niagara Falls, NY'
+albumCover: 'DSCN0303.jpg'

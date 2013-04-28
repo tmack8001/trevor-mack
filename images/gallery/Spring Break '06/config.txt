@@ -1,0 +1,5 @@
+albumName: 'Florida Trip'
+albumDescription: 'These pictures are from when me, my mom, and Rachel Weaver (gf at time) went to Florida for Spring Break.'
+albumDate: '05/10/2005 - 05/20/2005'
+albumLocation: 'Orlando, FL'
+albumCover: '03-16 007.jpg'

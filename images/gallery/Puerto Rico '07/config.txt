@@ -1,0 +1,5 @@
+albumName: 'BCM Puerto Rico Mission Trip'
+albumDescription: 'Pictures from all the work that was done by BCM in Puerto Rico.'
+albumDate: '05/03/2007 - 05/10/2007'
+albumLocation: 'San Juan, Puerto Rico'
+albumCover: '100_1621.jpg'

@@ -1,0 +1,5 @@
+albumName: 'Dave and Amy's Wedding'
+albumDescription: 'These are my pictures from Uncle Dave's and Aunt Amy's Wedding'
+albumDate: '07/09/2006'
+albumLocation: 'Rochester, NY'
+albumCover: 'P7090052.jpg'

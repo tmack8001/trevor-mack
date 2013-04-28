@@ -1,0 +1,5 @@
+albumName: 'Independence Day '09'
+albumDescription: 'Independence Day 2009. This is the trip to Boston for the fireworks.'
+albumDate: '07/04/2009'
+albumLocation: 'Cambridge, MA'
+albumCover: 'DSCN1252.jpg'

@@ -1,0 +1,201 @@
+/*
+ * This class is used to generator the XML document.
+ * 
+ * Filename:	XMLGenerator.java
+ * Author:		Trevor Michael Mack
+ * Date:		August 23rd, 2008
+ * Version:		1.0
+ */
+
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Iterator;
+import java.util.Scanner;
+
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.ParserConfigurationException;
+
+import org.w3c.dom.Document;
+import org.w3c.dom.Element;
+
+//For jdk1.5 with built in xerces parser
+import com.sun.org.apache.xml.internal.serialize.OutputFormat;
+import com.sun.org.apache.xml.internal.serialize.XMLSerializer;
+
+//For JDK 1.3 or JDK 1.4  with xerces 2.7.1
+//import org.apache.xml.serialize.XMLSerializer;
+//import org.apache.xml.serialize.OutputFormat;
+
+public class XMLGenerator {
+
+	public ArrayList<Album> albums;
+	public Document dom;
+	
+	@SuppressWarnings("unchecked")
+	public XMLGenerator() {
+		//create a list to hold the data
+		albums = new ArrayList<Album>();
+		
+		//initalize the list
+		loadAlbums();
+		
+		//sort arraylist by date
+		Collections.sort(albums);
+		
+		//Get a DOM object
+		createDocument();
+	}
+	
+	/*
+	 * This is the method to run for the actual program. This generates a photo album list from actual files,
+	 */
+	public void run() {
+		System.out.println("Started ...");
+		createDOMTree();
+		printToFile();
+		System.out.println("Generated XML document successfully.");
+	}
+	
+	/**
+	 * Add a list of albums to the list
+	 */
+	private void loadAlbums() {
+		Album album = new Album();
+		//Use for testing purposes only.
+//		album = new Album("pictures", "Sample Pictures", "pictures", "August 23rd, 2008", "Random Places",
+//				new Photo("Brent Patry", "Brent Patry controlling the puck.", "Brent Patry.jpg"));
+//		for(int i=0; i<10; i++) {
+//			album.addPhoto(new Photo("name" + i, "description" + i, "photo" + i + ".jpg"));
+//		}
+		
+		//Used to search the file system for album information.
+		//Create all the albums then for each album create the pictures
+		File directory = new File("..\\images\\gallery");
+		File albumConfiguration = null;
+		File[] folders = directory.listFiles(new FileTypeFilter(false, ""));
+		File[] files = null;
+		
+		String name = "", description = "", date = "", location = "";
+		Photo cover = new Photo();
+		
+		for(int i=0; i<folders.length; i++) {
+			albumConfiguration = new File(folders[i].getPath() + "\\config.txt");
+			//System.err.println(albumConfiguration.getAbsolutePath());
+			try {
+				Scanner scanner = new Scanner(albumConfiguration);
+				String text = "";
+				while(scanner.hasNextLine()) {
+					text = scanner.nextLine();
+					//System.out.println(folders[i].toString());
+					if( text.startsWith("albumName:") )
+						name = text.substring(text.indexOf("'")+1,text.lastIndexOf("'"));
+					else if( text.startsWith("albumDescription:") )
+						description = text.substring(text.indexOf("'")+1,text.lastIndexOf("'"));
+					else if( text.startsWith("albumDate:") )
+						date = text.substring(text.indexOf("'")+1,text.lastIndexOf("'"));
+					else if( text.startsWith("albumLocation:") )
+						location = text.substring(text.indexOf("'")+1,text.lastIndexOf("'"));
+					else if( text.startsWith("albumCover:") ) {
+						text = text.substring(text.indexOf("'")+1,text.lastIndexOf("'"));
+						cover = new Photo(text.substring(3,text.indexOf(".")), "", text);
+					}
+				}
+			} catch (Exception e) {
+				System.err.println(e.getMessage());
+			}
+			album = new Album(name,description,folders[i].getName(),date,location,cover);
+			files = folders[i].listFiles(new FileTypeFilter(true, "JPG"));
+			if (files.length == 0)
+				files = folders[i].listFiles(new FileTypeFilter(true, "jpg"));
+			
+			//System.out.println("album:     " + folders[i].getPath());
+			
+			for(int j=0; j<files.length; j++) {
+				//System.out.println("picture:      " + files[j].getPath());
+				if(files[j].getName().indexOf("lg") == 0)
+					album.addPhoto(new Photo(files[j].getName().substring(3,files[j].getName().length()-4),"",files[j].getName().substring(3)));
+			}
+			albums.add(album);
+		}
+	}
+	
+	/**
+	 * Using JAXP in implementation independent manner create a document object
+	 * using which we create a xml tree in memory
+	 */
+	private void createDocument() {
+		//get an instance of document factory
+		DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+		
+		try {
+		//get an instance of document builder
+		DocumentBuilder builder = factory.newDocumentBuilder();
+
+		//create an instance of DOM
+		dom = builder.newDocument();
+
+		}catch(ParserConfigurationException exception) {
+			//dump it
+			System.out.println("Error while trying to instantiate DocumentBuilder " + exception);
+			System.exit(1);
+		}
+	}
+	
+	/**
+	 * The real function which creates the XML structure
+	 */
+	private void createDOMTree() {
+		//create the root element <photos>
+		Element rootEle = dom.createElement("photos");
+		dom.appendChild(rootEle);
+
+		//No enhanced for
+		Iterator<Album> it  = albums.iterator();
+		while(it.hasNext()) {
+			Album album = (Album)it.next();
+			//For each Album object create <album> element and attach it to root
+			Element albumElement = album.getXMLElement(dom);
+			rootEle.appendChild(albumElement);
+		}
+	}
+	
+	/**
+	 * This method uses Xerces specific classes in order to print the XML document to a file.
+     */
+	private void printToFile() {
+		try {
+			//print
+			OutputFormat format = new OutputFormat(dom);
+			format.setIndenting(true);
+
+			//to generate output to console use this serializer
+			//XMLSerializer serializer = new XMLSerializer(System.out, format);
+
+			//to generate a file output use fileoutputstream instead of system.out
+			XMLSerializer serializer = new XMLSerializer(
+			new FileOutputStream(new File("photos.xml")), format);
+
+			serializer.serialize(dom);
+
+		} catch(IOException ie) {
+		    ie.printStackTrace();
+		}
+	}
+	
+	public static void main(String args[]) {
+
+		//create an instance
+		XMLGenerator xmlGenerator = new XMLGenerator();
+
+		//run the example
+		xmlGenerator.run();
+		
+		//run the actual program to find filenames
+		//xmlGenerator.run()
+	}
+}

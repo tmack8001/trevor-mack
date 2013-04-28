@@ -1,0 +1,5 @@
+albumName: 'BCM Zoo Trip'
+albumDescription: 'We went to the zoo to be on the lookout for a new pet.'
+albumDate: '09/13/2008'
+albumLocation: 'Rochester, NY'
+albumCover: '102_2512.jpg'

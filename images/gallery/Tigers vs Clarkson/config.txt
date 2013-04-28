@@ -1,0 +1,5 @@
+albumName: 'RIT Tiger's vs. Clarkson'
+albumDescription: 'RIT Tiger's hockey home openner.'
+albumDate: '08/17/2008'
+albumLocation: 'Rochester, NY'
+albumCover: '102_2668.jpg'

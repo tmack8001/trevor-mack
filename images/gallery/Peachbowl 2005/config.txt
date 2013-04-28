@@ -1,0 +1,5 @@
+albumName: 'Chick-fil-a Peach Bowl'
+albumDescription: 'Went to Atlanta, GA to work for Chick-fil-a at the Peach Bowl.'
+albumDate: '12/30/2006 - 01/05/2006'
+albumLocation: 'Atlanta, GA'
+albumCover: 'Picture 097.jpg'

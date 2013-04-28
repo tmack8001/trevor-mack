@@ -1,0 +1,5 @@
+albumName: 'RIT Ice/Snow Day'
+albumDescription: 'Pictures from the first RIT closing in over 10 years and there was not even ice on the roads!'
+albumDate: '01/17/2007'
+albumLocation: 'Rochester, NY'
+albumCover: '100_1557.jpg'

@@ -1,0 +1,5 @@
+albumName: 'Random RIT'
+albumDescription: 'Random pictures from school freshman year.'
+albumDate: '09/01/2006 - 04/01/2007'
+albumLocation: 'Rochester, NY'
+albumCover: '100_1570.jpg'

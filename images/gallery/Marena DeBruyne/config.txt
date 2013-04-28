@@ -1,0 +1,5 @@
+albumName: 'Marena DeBruyne Day 1'
+albumDescription: 'Marena Mabel DeBruyne's first day in this world.'
+albumDate: '05/14/2006'
+albumLocation: 'Rochester, NY'
+albumCover: 'Baby Marena 10.jpg'

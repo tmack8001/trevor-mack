@@ -1,0 +1,5 @@
+albumName: 'Move-in to Bedford'
+albumDescription: 'These are pictures from when I moved into my apartment/duplex in Bedford, Ma in 2009'
+albumDate: '03/01/2009'
+albumLocation: 'Bedford, MA'
+albumCover: 'DSCN1198.jpg'

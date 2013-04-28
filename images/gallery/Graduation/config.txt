@@ -1,0 +1,5 @@
+albumName: 'High School Graduation'
+albumDescription: 'Science Hill's Class of 2006 Graduation pictures and after party with family'
+albumDate: '05/24/2006'
+albumLocation: 'Johnson City, TN'
+albumCover: '100_0800.jpg'

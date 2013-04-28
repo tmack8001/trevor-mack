@@ -1,0 +1,5 @@
+albumName: 'NYC (Scared Heart Trip)'
+albumDescription: 'Pictures from the trip to NYC after the RIT Scared Heart Game.'
+albumDate: '01/15/2007'
+albumLocation: 'New York City, NY'
+albumCover: '100_1476.jpg'

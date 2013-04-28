@@ -1,0 +1,5 @@
+albumName: 'NYLF on Technology'
+albumDescription: 'These are picutres from the National Youth Leadership Fourm on Technology.'
+albumDate: '06/25/2006 - 07/06/2006'
+albumLocation: 'San Jose, CA'
+albumCover: 'P1010007.jpg'

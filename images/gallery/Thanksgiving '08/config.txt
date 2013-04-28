@@ -1,0 +1,5 @@
+albumName: 'Thanksgiving '08'
+albumDescription: 'The whole family got together at my dad's house in Texas for Thanksgiving.'
+albumDate: '11/24/2008 - 11/29/2008'
+albumLocation: 'Grapevine, TX'
+albumCover: 'DSCN0305.jpg'

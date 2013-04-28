@@ -1,0 +1,56 @@
+/*
+ * --------------------------
+ * 	    PRINT STYLESHEET
+ * --------------------------
+ */ 
+
+#side_trevor_mack, #header, #footer, ul#social-media {
+	display: none;
+}
+
+#main_holder {
+	border: none;
+}
+
+.pagebreak {
+	page-break-after: always;
+}
+
+#cv{ 
+	border: none;
+	width: 100%;margin: 0px;
+	padding: 0px;
+	float: none;
+}
+
+.cv-section{ padding: 10px; }
+
+.item{ padding: 0px; }
+.last-item { padding: 0px; margin: 0px }
+
+.print-border {
+	display: block;
+	border-bottom: 15px solid #227821;
+	float: bottom; 
+	height: 0px;
+	margin-bottom: 20px;
+}
+
+.first {
+	margin-bottom: 0px;
+}
+
+/*
+.first-cv-section{ padding:30px 0; }
+.person h1{ margin-bottom:10px; }
+.person h2{ letter-spacing:0px; }
+#contact-info{ margin-top:30px; }
+
+.cv-section-name{ float:none; margin-bottom:30px; }
+h2.cv-section-name{ font-style:normal; }
+	
+.cv-section-items{ float:none; width:90%; margin-left:10%; }
+*/
+.panel, ul#social-media, a.emailme { display: none; }
+
+body { background: none; }

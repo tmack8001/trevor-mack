@@ -1,0 +1,37 @@
+ul.gallery{
+	background: transparent none repeat scroll 0 0;
+	list-style-image: none;
+	list-style-position: outside;
+	list-style-type: none;
+	margin: 0;
+	width: 100%;
+}
+
+ul.gallery li {
+	border-top:1px solid #000000;
+	float:left;
+	font-size:11px;
+	height:300px;
+	line-height:14px;
+	margin:0;
+	overflow:hidden;
+	width:225px;
+}
+
+ul.gallery li a {
+	color:#000000;
+	display:block;
+	padding:15px 15px 15px 15px;
+	text-decoration: none;
+}
+
+ul.gallery li a img {
+	margin-left: auto;
+	margin-right: auto;
+	border:1px solid #000000;
+	padding:2px;
+}
+
+h4 {
+	font-size: 12px;
+}

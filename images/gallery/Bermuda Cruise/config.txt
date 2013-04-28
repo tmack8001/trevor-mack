@@ -1,0 +1,5 @@
+albumName: 'Bermuda Cruise'
+albumDescription: 'My family decided to go on a cruise to Bermuda the summer of 2006 for my grandparents' 50th wedding anniversary, my Uncle's 1st wedding anniversary, and my 18th birthday.'
+albumDate: '07/02/2006 - 07/10/2006'
+albumLocation: 'Bermuda'
+albumCover: '100_1109.jpg'

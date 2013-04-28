@@ -1,0 +1,5 @@
+albumName: 'RIT vs. Sacred Heart Game 1'
+albumDescription: 'RIT vs. Sacred Heart 2008 Game 1 Pictures'
+albumDate: '02/06/2009'
+albumLocation: 'Rochester, NY'
+albumCover: 'DSCN1054.jpg'

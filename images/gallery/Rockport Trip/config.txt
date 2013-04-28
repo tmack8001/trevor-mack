@@ -1,0 +1,5 @@
+albumName: 'Rockport Trip'
+albumDescription: 'A bunch of people from FIRE went to Rockport for the night.'
+albumDate: '07/10/2009'
+albumLocation: 'Rockport, MA'
+albumCover: 'DSCN1284.jpg'

@@ -1,0 +1,5 @@
+# Contact info submission
+url: trevor-mack.com
+site_owner: Trevor Mack
+display_email: admin@trevor-mack.com
+site_name: Trevor Mack Website

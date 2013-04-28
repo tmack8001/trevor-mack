@@ -1,0 +1,5 @@
+albumName: 'RIT vs. Sacred Heart 2007-2008'
+albumDescription: 'These are random pictures from the Champion deciding game mid-way through the 2007-2008 season.'
+albumDate: '01/15/2008'
+albumLocation: 'Fairfield, CT'
+albumCover: '0001.jpg'

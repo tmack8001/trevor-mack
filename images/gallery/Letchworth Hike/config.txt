@@ -1,0 +1,5 @@
+albumName: 'Letchworth Picnic'
+albumDescription: 'Picnic at Letchworth State Park with BCM'
+albumDate: '09/27/2008'
+albumLocation: 'Letchworth State Park, NY'
+albumCover: '102_2613.jpg'

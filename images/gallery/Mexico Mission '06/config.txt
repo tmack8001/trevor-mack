@@ -1,0 +1,5 @@
+albumName: 'HBSM Mexico Mission Trip 2006'
+albumDescription: 'Pictures of the work that we did when the youth group of HBC went to Texas to help Juan.'
+albumDate: '06/25/2006 - 07/05/2006'
+albumLocation: 'Donna, TX'
+albumCover: '100_0938.jpg'

@@ -1,0 +1,5 @@
+albumName: 'HBSM Mexico Mission Trip 2007'
+albumDescription: 'Random pictures from the second HBC Mexico Mission Trip.'
+albumDate: '06/25/2007 - 07/05/2007'
+albumLocation: 'Donna, TX'
+albumCover: '100_2401.jpg'

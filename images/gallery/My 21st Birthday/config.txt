@@ -1,0 +1,5 @@
+albumName: 'My 21st Birthday'
+albumDescription: 'Pictures from my 21st birthday. Hanging out with Claire, Karine, Carla, Scott for the day and met up with people from FIRE for dinner.'
+albumDate: '07/03/2009'
+albumLocation: 'Bedford, MA'
+albumCover: 'DSCN1233.jpg'

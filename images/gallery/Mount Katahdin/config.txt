@@ -1,0 +1,5 @@
+albumName: 'Mount Katahdin'
+albumDescription: 'Pictures from Dan Tan's Event Hike in Maine.'
+albumDate: '08/21/2009 - 08/23/2009'
+albumLocation: 'Millinocket, ME'
+albumCover: 'DSCN1948.jpg'

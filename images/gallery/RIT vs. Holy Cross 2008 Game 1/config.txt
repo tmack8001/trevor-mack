@@ -1,0 +1,5 @@
+albumName: 'RIT vs. Holy Cross Game 1'
+albumDescription: 'Pictures from the first match up against the Holy Cross Crusaders in the 2008-2009 season.'
+albumDate: '10/31/2008'
+albumLocation: 'Rochester, NY'
+albumCover: 'DSCN0124.jpg'
