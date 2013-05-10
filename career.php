@@ -56,22 +56,22 @@
                             <br/>
                         </td>
                         <td valign=top align=center width='25%'>
+                          <img src='/images/work/groupon-logo.png' alt='Groupon Inc.' width='150px' />
                           <br/><br/><br/><br/><br/><br/>
-                          <img src='/images/work/groupon.png' alt='Groupon Inc.' width='150px' />
                         </td>
                       </tr>
 					  <tr>
 						<td valign='top' width='75%'>
+							<h5>Senior Internet Application Developer</h5>
 							<h6><i>MITRE Corp.</i>, Bedford, Massachusetts</h6>
-							<p>MITRE Corporation is a public interest company housing five FFRDCs, Federally Funded Research and Development Centers. These FFRDCs are managed for the following sponsors: the Department of Defense (Assistant Secretary of Defense for Networks and Information Integration), the Federal Aviation Administration (FAA), the Internal Revenue Service (IRS), and the U.S. Department of Veterans Affairs (VA), and the newest of the five the U.S. Department of Homeland and Security (DHS). MITRE works in partnership with the government applying systems engineering and advanced technology to address issues of critical national importance. MITRE values it's people as it's number one asset and puts an emphasis on shared responsibility for growth, partnership with the government, collaboration within and without, and the ability to maintain a balanced lifestyle.</p>
-                            <h5>Senior Internet Application Developer</h5>
 							<h6/><i>Employment</i>: September 2012 - January 25th 2013</h6>
-							<p>Description to follow...</p>
+                            <p>MITRE Corporation is a public interest company housing five FFRDCs, Federally Funded Research and Development Centers. These FFRDCs are managed for the following sponsors: the Department of Defense (Assistant Secretary of Defense for Networks and Information Integration), the Federal Aviation Administration (FAA), the Internal Revenue Service (IRS), and the U.S. Department of Veterans Affairs (VA), and the newest of the five the U.S. Department of Homeland and Security (DHS). MITRE works in partnership with the government applying systems engineering and advanced technology to address issues of critical national importance. MITRE values it's people as it's number one asset and puts an emphasis on shared responsibility for growth, partnership with the government, collaboration within and without, and the ability to maintain a balanced lifestyle.</p>
+                            <p>Description to follow...</p>
 							<h5>Software Systems Engineer</h5>
                             <h6/><i>Employment</i>: August 2010 - September 2012</h6>
                             <p>Description to follow...</p>
 							<h5>Technical Summer + Extended Part-time On-Call</h5>
-							<br/><i>Employment</i>: March 9th - July 2010</h6>
+							<h6><i>Employment</i>: March 9th - July 2010</h6>
 							<p>Over the course of six months with MITRE I worked on a number of different projects. The two main projects that I was assigned dealt with collaboration within a work environment both traditional collaboration and also impromptu collaboration. The team of eight interns that I was working closely with durring this time were also assigned to the impromptu collaboration piece and all of us came up with a group response to the problem we were faced with. Durring the last two months of my time at MITRE three of the initial team of eight broke off to pursue a technical approach that eventually lead to a web application that we delivered in October. Directly following I was extended an offer to stay on board and continue to polish the delivered products from that summer's intern Grand Challenge.</p>
 							<p>Some of the major job responsibilities that I had while working for Frontier Exploration Services within the IT organization at MITRE include: software development,  technology assessment and research, ideation, and providing innovative approaches and solutions for modern business problems. The major software development projects that I was involved in mostly consisted of PHP, HTML, and JavaScript. Some of the smaller more research based projects consisted of Java and Java Servlet Technology.</p>
 							<p>MITRE Corp.<br/>
