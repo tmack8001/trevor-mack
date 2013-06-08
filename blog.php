@@ -3,14 +3,16 @@ require $_SERVER['DOCUMENT_ROOT'].'/includes/classes/Mysql.php';
 
 $mysql = new Mysql();
 $article = isset($_GET['article']) ? $_GET['article'] : '';
+$permalink = isset($_GET['permalink']) ? $_GET['permalink'] : '';
 $date = isset($_GET['date']) ? $_GET['date'] : '';
 
 /* DEBUG CODE */
 //echo "article: $article<br>";
+//echo "permalink: $permalink<br>";
 //echo "date: $date<br>";
 /* DEBUG CODE */
 
-$blogs = $mysql->get_blogs($article, $date);
+$blogs = $mysql->get_blogs($article, $permalink, $date);
 
 if( isset($_POST['action']) && $_POST['action'] === "comment" ) {
 	$alertMessage = "";

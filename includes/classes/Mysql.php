@@ -25,16 +25,22 @@ class Mysql {
 					  die('There was a problem connecting to the database');
 	}
 	
-	function get_blogs($article = '', $date = '', $format = 'full') {
+	function sanitize($user_input) {
+	    return mysql_real_escape_string($user_input)
+	}
+
+	function get_blogs($article = '', $permalink = '', $date = '', $format = 'full') {
 		$blogs = array();
 		
 		$articleFilter = '';
 		$dateFilter = false;
 		if($article)
-			$articleFilter = ' AND article.articleID = ' . $article;
+			$articleFilter = ' AND article.articleID = ' . sanitize($article);
+		if($permalink)
+		    $articleFilter = ' AND article.permalink = ' . sanitize($permalink);
 		if($date)
 			$dateFilter = true;
-		
+
 		$query = "SELECT *
 				  FROM `article`, `categories`
 				  WHERE article.categoryID = categories.categoryID $articleFilter
