@@ -26,7 +26,7 @@ class Mysql {
 	}
 	
 	function sanitize($user_input) {
-	    return mysql_real_escape_string($user_input)
+	    return mysql_real_escape_string($user_input);
 	}
 
 	function get_blogs($article = '', $permalink = '', $date = '', $format = 'full') {
@@ -110,7 +110,7 @@ class Mysql {
 	}
 	
 	function add_comment($name, $email, $commentText, $articleID) {
-		// sanitise data
+		// sanitize data
 		$name = strip_tags($name);
 		$email = strip_tags($email);
 		// remove img tags (potential security risk)
