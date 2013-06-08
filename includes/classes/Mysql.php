@@ -37,7 +37,7 @@ class Mysql {
 		if($article)
 			$articleFilter = ' AND article.articleID = ' . $this->sanitize($article);
 		if($permalink)
-		    $articleFilter = ' AND article.permalink = \"' . $this->sanitize($permalink) . '\"';
+		    $articleFilter = ' AND article.permalink = "' . $this->sanitize($permalink) . '"';
 		if($date)
 			$dateFilter = true;
 
