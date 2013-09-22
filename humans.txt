@@ -1,0 +1,16 @@
+# trevor-mack.com/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Trevor Mack -- Developer -- @tmack8001
+
+# THANKS
+
+    <name>
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3
+    TwitterBootstrap, jQuery, Modernizr
+    html5shiv, Respond.js
