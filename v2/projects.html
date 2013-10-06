@@ -8,7 +8,7 @@
     <meta name="author" content="Trevor Mack">
     <link rel="shortcut icon" href="img/tm-mark-400.png">
 
-    <title>Resume</title>
+    <title>About</title>
 
     <!-- Bootstrap -->
     <link href="includes/bootstrap/v3.0.0/css/bootstrap.min.css" rel="stylesheet" media="screen">
@@ -53,7 +53,7 @@
                     <li>
                         <a href="#schedule">schedule</a>
                     </li>
-                    <li>
+                    <li class="active">
                         <a href="#projects">projects</a>
                     </li>
                     <li>
@@ -62,7 +62,7 @@
                     <li>
                         <a href="#career">career</a>
                     </li>
-                    <li class="active">
+                    <li>
                         <a href="#resume">resume</a>
                     </li>
                     <li>
@@ -82,30 +82,21 @@
     <main class="container">
         <article>
             <header class="page-header">
-                <h1>My Resume</h1>
+                <h1>Projects</h1>
             </header>
-
-            <div class="text-center">
-                <section id="resume-doc" class="col-lg-6">
-                    <a href='../includes/documents/Trevor Mack Resume.doc'>
-                        <img border='none' src='../images/ui/icons/doc_icon.png' alt='Download as DOC' width='150px' /></a>
-                    <h4>Download as DOC</h4>
+            <section>
+                <header>
+                    <h2>Photo Album</h2>
+                    <h4><i>Highslide Implementation</i></h4>
+                </header>
+                <section>
+                    <p>I stumbled upon Highslide JS over the summer of 2008 when I was looking at adding a photo album page to my personal website. This open source JavaScript software offers a Web 2.0 approach to popup windows. It streamlines the use of thumbnail images and HTML popups on web pages. Therefore proves to be a great solution to a photo album implementation. Other features that make this a optimal approach to photo pages includes the fact that there is no need for plugins like Flash or Java, Popup blockers are no problem since the popups exist inside of the webpage, and the builtin compatibility and safe fallback features that if a user has disabled JavaScript or is using an unsupported browser, the browser will redirect to the image itself or to a fallback HTML page.</p>
+                    <p>In addition to the Highslide Implementation I have also created an automation program to add pictures to this photo page. Behind the scenes this program will create a XML file that has the album information and links to the physical location of the pictures to be included. You would need to only run this program when the file system where the photo albums are located. The program will automatically scan through the filesystem recognizing every folder under the main gallery folder as a new album and then will search for the photo files under that directory. The program was written solely in JAVA using the DOM representation of an XML file. This program has been generated into a JAR file and a configuration file for easy integration for other websites. Included in the zip file you will find all the files that you will need in order to integrate this to your website.</p>
+                    <p>See sources in Github link coming soon.</p>
+                    <img class="pull-left" src='../images/somerights.png' alt='Some Rights Reserved' />
+                    <p>Notice that HighSlide JS is licensed under a Creative Commons Attribution-NonCommercial 2.5 License. This means that you need the author's permission to use Highslide JS on commercial websites.</p>
                 </section>
-
-                <section id="resume-pdf" class="col-lg-6">
-                    <a href='../includes/documents/Trevor Mack Resume.pdf'>
-                        <img border='none' src='../images/ui/icons/pdf_icon.png' alt='Download as PDF' width='150px' /></a>
-                    <h4>Download as PDF</h4>
-                </section>
-
-                <!-- <section id="resume-zip">
-                    <a href='../includes/documents/Trevor Mack Resume.zip'>
-                        <img border='none' src='../images/ui/icons/zip_icon.png' alt='Download as ZIP' width='150px'></a>
-                    <h4>Download as ZIP</h4>
-                </section> -->
-            </div>
-
-            <p class="text-muted">Last Updated on March 1st, 2010 at 11:11pm EST</p>
+            </section>
 
             <aside class="text-center">
                 <script type="text/javascript"><!--
