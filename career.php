@@ -47,7 +47,7 @@
                         <td valign='top' width='75%'>
                             <h5>Software Engineer</h5>
                             <h6><i>Groupon Inc.</i>, Palo Alto, California</h6>
-                            <h6/><i>Employment</i>: January 29th 2013 - January 25th 2013</h6>
+                            <h6/><i>Employment</i>: January 29th 2013 - current</h6>
                             <p>Description to follow...</p>
                             <p>Groupon Inc.<br/>
                             3101 Park Blvd<br/>
